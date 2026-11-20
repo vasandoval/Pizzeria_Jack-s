@@ -763,6 +763,10 @@ footer {
 }
 
 .redes a {
+    color: #D1CAC4;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
