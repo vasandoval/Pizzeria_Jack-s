@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración | Pizzería JACK'S</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <header class="encabezado">
+            <div>
+                <p class="etiqueta">PIZZERÍA JACK'S</p>
+                <h1>Panel de administración</h1>
+                <p class="descripcion">
+                    Administra la información de tu pizzería.
+                </p>
+            </div>
+        </header>
+
+        <section class="aviso">
+            <strong>Área privada</strong>
+            <p>
+                Los cambios que guardes se enviarán al repositorio
+                y después se publicarán en la página web.
+            </p>
+        </section>
+
+        <section class="tarjeta">
+            <div class="titulo-tarjeta">
+                <div>
+                    <h2>Información general</h2>
+                    <p>Archivo: data/site.json</p>
+                </div>
+                <button type="button" id="recargarSite" class="boton-secundario">
+                    Recargar
+                </button>
+            </div>
+
+            <textarea
+                id="editorSite"
+                spellcheck="false"
+                aria-label="Información general en formato JSON"
+                placeholder="Cargando información..."
+            ></textarea>
+
+            <div class="acciones">
+                <span id="estadoSite" role="status"></span>
+                <button type="button" id="guardarSite">
+                    Guardar información
+                </button>
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <div class="titulo-tarjeta">
+                <div>
+                    <h2>Menú y productos</h2>
+                    <p>Archivo: data/menu.json</p>
+                </div>
+                <button type="button" id="recargarMenu" class="boton-secundario">
+                    Recargar
+                </button>
+            </div>
+
+            <textarea
+                id="editorMenu"
+                spellcheck="false"
+                aria-label="Menú en formato JSON"
+                placeholder="Cargando menú..."
+            ></textarea>
+
+            <div class="acciones">
+                <span id="estadoMenu" role="status"></span>
+                <button type="button" id="guardarMenu">
+                    Guardar menú
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Panel privado de Pizzería JACK'S</p>
+            <a href="/">Volver a la página principal</a>
+        </footer>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f3ef;
+    color: #292321;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.encabezado {
+    margin-bottom: 25px;
+}
+
+.etiqueta {
+    color: #8b273e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.descripcion {
+    color: #777;
+}
+
+.aviso {
+    background: #f0e5df;
+    border-left: 4px solid #8b273e;
+    padding: 18px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.aviso p {
+    margin-top: 6px;
+    color: #655b56;
+    line-height: 1.5;
+}
+
+.tarjeta {
+    background: white;
+    border: 1px solid #e6ded9;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.titulo-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.titulo-tarjeta p {
+    color: #888;
+    font-size: 13px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 320px;
+    resize: vertical;
+    padding: 15px;
+    border: 1px solid #d9d0ca;
+    border-radius: 6px;
+    background: #fbfaf9;
+    color: #292321;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+textarea:focus {
+    outline: 2px solid #8b273e;
+    border-color: transparent;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.acciones span {
+    color: #666;
+    font-size: 13px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 18px;
+    background: #8b273e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6f1e32;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.boton-secundario {
+    background: #eee7e2;
+    color: #443a36;
+}
+
+.boton-secundario:hover {
+    background: #e1d6ce;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    padding: 20px;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #8b273e;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .titulo-tarjeta,
+    .acciones {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    textarea {
+        min-height: 260px;
+    }
+}

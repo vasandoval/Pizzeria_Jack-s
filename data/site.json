@@ -1,0 +1,53 @@
+{
+  "brand": {
+    "name": "Pizzería JACK'S",
+    "logo": "assets/logo/logo-jacks.jpeg",
+    "whatsapp": "",
+    "socialLinks": {
+      "instagram": "",
+      "facebook": ""
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": [],
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "stats": [],
+    "featuredProduct": {},
+    "combos": [],
+    "story": {
+      "title": "",
+      "description": "",
+      "image": ""
+    }
+  },
+  "about": {
+    "intro": {
+      "subtitle": "",
+      "title": "",
+      "description": ""
+    },
+    "story": {
+      "title": "",
+      "paragraphs": [],
+      "image": ""
+    },
+    "mission": "",
+    "vision": "",
+    "values": []
+  },
+  "contact": {
+    "title": "",
+    "subtitle": "",
+    "description": "",
+    "address": "",
+    "phone": "",
+    "hours": "",
+    "mapEmbedUrl": "",
+    "socialText": "",
+    "formEmbedUrl": ""
+  }
+}
