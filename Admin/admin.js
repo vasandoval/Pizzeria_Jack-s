@@ -114,3 +114,44 @@ archivos.menu.recargar.addEventListener("click", () => {
 
 cargarArchivo("site");
 cargarArchivo("menu");
+
+
+// Cerrar sesión del administrador
+const botonCerrarSesion = document.getElementById("cerrarSesion");
+
+if (botonCerrarSesion) {
+
+    botonCerrarSesion.addEventListener("click", async function () {
+
+        botonCerrarSesion.disabled = true;
+        botonCerrarSesion.textContent = "Cerrando sesión...";
+
+        try {
+
+            const respuesta = await fetch("/admin/logout", {
+                method: "POST",
+                credentials: "same-origin",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({})
+            });
+
+            if (!respuesta.ok) {
+                throw new Error("No se pudo cerrar la sesión.");
+            }
+
+            window.location.replace("/admin/login.html");
+
+        } catch (error) {
+
+            alert(error.message);
+
+            botonCerrarSesion.disabled = false;
+            botonCerrarSesion.textContent = "Cerrar sesión";
+
+        }
+
+    });
+
+}
