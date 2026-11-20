@@ -763,6 +763,10 @@ footer {
 }
 
 .redes a {
+    color: #D1CAC4;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1213,4 +1217,99 @@ html {
     border: 0;
     border-radius: 8px;
     background-color: #ffffff;
+}
+
+
+/* ===== MENU DE NAVEGACION MOVIL ===== */
+
+.header-contenido {
+    position: relative;
+}
+
+/* Botón hamburguesa */
+
+.boton-menu-movil {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #3B3532;
+    border-radius: 8px;
+    background-color: #23201E;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.boton-menu-movil span {
+    display: block;
+    width: 21px;
+    height: 2px;
+    background-color: #D4A359;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Pantallas pequeñas y tablets */
+
+@media (max-width: 900px) {
+
+    .boton-menu-movil {
+        display: flex;
+    }
+
+    .navegacion.abierta {
+        display: flex;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 24px;
+        background-color: rgba(29, 26, 24, 0.98);
+        border-bottom: 1px solid #3B3532;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .navegacion.abierta a {
+        padding: 14px 8px;
+        border-bottom: 1px solid #3B3532;
+    }
+
+    .navegacion.abierta a:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Ajustes para celulares */
+
+@media (max-width: 600px) {
+
+    .header-contenido {
+        gap: 8px;
+    }
+
+    .logo {
+        height: 28px;
+    }
+
+    .nombre-pizzeria span:first-child {
+        font-size: 20px;
+    }
+
+    .boton-whatsapp {
+        padding: 8px 10px;
+    }
+
+    .texto-boton-whatsapp {
+        font-size: 0;
+    }
+
+    .texto-boton-whatsapp::after {
+        content: "WhatsApp";
+        font-size: 12px;
+    }
 }

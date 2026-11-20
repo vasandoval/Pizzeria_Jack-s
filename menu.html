@@ -36,7 +36,23 @@
                 </div>
             </div>
 
-            <nav class="navegacion">
+            <button
+                class="boton-menu-movil"
+                type="button"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="menu-principal"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="navegacion"
+                id="menu-principal"
+                aria-label="Navegación principal"
+            >
                 <a href="index.html">Inicio</a>
                 <a href="sobre-nosotros.html">Sobre Nosotros</a>
                 <a href="menu.html" class="activo">Menú</a>
@@ -48,13 +64,17 @@
                     class="boton-whatsapp"
                     href="https://api.whatsapp.com/send?phone=573000000000"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Pedir por WhatsApp
+                    <span class="texto-boton-whatsapp">
+                        Pedir por WhatsApp
+                    </span>
                 </a>
             </div>
 
         </div>
     </header>
+
 
     <main>
 
@@ -389,23 +409,23 @@
 
             <div>
                 <h3>Pizzería JACK'S</h3>
-                <p>[Descripción del cliente]</p>
+                <p>Pizzas, hamburguesas y mucho más, hechos con cariño. 18 años en familia.</p>
             </div>
 
             <div>
                 <h4>Horario de Atención</h4>
-                <p>[Horario del cliente]</p>
+                <p>De 5:00 p. m. a 10:00 p. m.</p>
             </div>
 
             <div>
                 <h4>Ubicación y Pedidos</h4>
-                <p>[Dirección del cliente]</p>
-                <p>[Teléfono del cliente]</p>
+                <p>Cl. 20 #22-33, Duitama, Boyacá</p>
+                <p>+57 313 263 4986</p>
             </div>
 
             <div>
                 <h4>Síguenos</h4>
-                <p>[Texto redes sociales]</p>
+                <p>Síguenos para conocer las novedades y los nuevos productos.</p>
 
                 <div class="redes">
                     <a href="#"></a>
@@ -415,6 +435,8 @@
 
         </div>
     </footer>
+
+    <script src="js/menu-movil.js"></script>
 
 </body>
 </html>

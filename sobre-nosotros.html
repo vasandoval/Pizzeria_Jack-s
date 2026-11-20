@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -36,7 +35,23 @@
                 </div>
             </div>
 
-            <nav class="navegacion">
+            <button
+                class="boton-menu-movil"
+                type="button"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="menu-principal"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="navegacion"
+                id="menu-principal"
+                aria-label="Navegación principal"
+            >
                 <a href="index.html">Inicio</a>
                 <a href="sobre-nosotros.html" class="activo">Sobre Nosotros</a>
                 <a href="menu.html">Menú</a>
@@ -48,21 +63,25 @@
                     class="boton-whatsapp"
                     href="https://api.whatsapp.com/send?phone=573000000000"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Pedir por WhatsApp
+                    <span class="texto-boton-whatsapp">
+                        Pedir por WhatsApp
+                    </span>
                 </a>
             </div>
 
         </div>
     </header>
 
+
     <main>
 
         <!-- Presentación de la página -->
         <section class="page-hero">
-            <span class="mini-titulo">[Subtítulo]</span>
-            <h1>[Título de Sobre Nosotros]</h1>
-            <p>[Texto de introducción]</p>
+            <span class="mini-titulo">Conócenos</span>
+            <h1>Sobre Nosotros</h1>
+            <p>Somos un negocio de familia con 18 años de historia. Conoce cómo empezamos y por qué aquí te sientes como en casa.</p>
         </section>
 
         <!-- Historia de la pizzería -->
@@ -74,73 +93,21 @@
                 </div>
 
                 <div class="nosotros-texto">
-                    <span class="etiqueta">[Etiqueta]</span>
-                    <h2>[Título de la historia]</h2>
-                    <p>[Texto de la historia, primer párrafo]</p>
-                    <p>[Texto de la historia, segundo párrafo]</p>
+                    <span class="etiqueta">Nuestra historia</span>
+                    <h2>18 años sirviendo con sabor de familia</h2>
+                    <p>Pizzería JACK’S nació de un sueño en familia. Empezamos hace 18 años como “La Pizza de Alejo” y, con el tiempo, quisimos que el nombre reflejara lo que somos de verdad, así que lo cambiamos a JACK’S para darle un ambiente más familiar. Desde hace 15 años tenemos nuestra propia sede, y con esfuerzo y cariño hemos crecido poco a poco, junto a las familias y los clientes de siempre que nos visitan.</p>
+                    <p>Hoy preparamos pizzas, hamburguesas, perros calientes, lasañas y mucho más, siempre con la misma ilusión del primer día. Aquí queremos que te sientas como en casa.</p>
                 </div>
 
             </div>
         </section>
 
-        <!-- Misión y visión -->
-        <section class="mision-vision">
-
-            <div class="mv-card">
-                <span class="mini-titulo">[Subtítulo]</span>
-                <h3>[Misión]</h3>
-                <p>[Texto de la misión]</p>
-            </div>
-
-            <div class="mv-card">
-                <span class="mini-titulo">[Subtítulo]</span>
-                <h3>[Visión]</h3>
-                <p>[Texto de la visión]</p>
-            </div>
-
-        </section>
-
-        <!-- Valores de la pizzería -->
-        <section class="valores">
-
-            <div class="titulo-seccion">
-                <div>
-                    <span class="mini-titulo">[Subtítulo]</span>
-                    <h2>[Título de valores]</h2>
-                </div>
-            </div>
-
-            <div class="pilares">
-
-                <div>
-                    <span></span>
-                    <h4>[Valor 1]</h4>
-                    <p>[Texto]</p>
-                </div>
-
-                <div>
-                    <span></span>
-                    <h4>[Valor 2]</h4>
-                    <p>[Texto]</p>
-                </div>
-
-                <div>
-                    <span></span>
-                    <h4>[Valor 3]</h4>
-                    <p>[Texto]</p>
-                </div>
-
-            </div>
-
-        </section>
 
         <!-- Acceso al menú -->
         <section class="menu-final">
 
             <div>
-                <span>[Subtítulo]</span>
-                <h2>[Título del menú]</h2>
-                <p>[Texto del menú]</p>
+                <h2>Menu Principal</h2>
             </div>
 
             <a href="menu.html">Explorar el Menú Completo</a>
@@ -155,12 +122,12 @@
 
             <div>
                 <h3>Pizzería JACK'S</h3>
-                <p>[Descripción del cliente]</p>
+                <p>Pizzas, hamburguesas y mucho más, hechos con cariño. 18 años en familia.</p>
             </div>
 
             <div>
                 <h4>Horario de Atención</h4>
-                <p>[Horario del cliente]</p>
+                <p>De 5:00 p. m. a 10:00 p. m.</p>
             </div>
 
             <div>
@@ -171,7 +138,7 @@
 
             <div>
                 <h4>Síguenos</h4>
-                <p>[Texto redes sociales]</p>
+                <p>Síguenos para conocer las novedades y los nuevos productos.</p>
 
                 <div class="redes">
                     <a href="#"></a>
@@ -181,6 +148,8 @@
 
         </div>
     </footer>
+
+    <script src="js/menu-movil.js"></script>
 
 </body>
 </html>

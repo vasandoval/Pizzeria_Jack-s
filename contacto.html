@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -36,7 +35,23 @@
                 </div>
             </div>
 
-            <nav class="navegacion">
+            <button
+                class="boton-menu-movil"
+                type="button"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="menu-principal"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="navegacion"
+                id="menu-principal"
+                aria-label="Navegación principal"
+            >
                 <a href="index.html">Inicio</a>
                 <a href="sobre-nosotros.html">Sobre Nosotros</a>
                 <a href="menu.html">Menú</a>
@@ -46,23 +61,27 @@
             <div class="acciones">
                 <a
                     class="boton-whatsapp"
-                    href="https://api.whatsapp.com/send?phone=573000000000"
+                    href="https://api.whatsapp.com/send?phone=573132634986&amp;text=Hola%2C%20quiero%20hacer%20un%20pedido"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Pedir por WhatsApp
+                    <span class="texto-boton-whatsapp">
+                        Pedir por WhatsApp
+                    </span>
                 </a>
             </div>
 
         </div>
     </header>
 
+
     <main>
 
         <!-- Presentación de la página -->
         <section class="page-hero">
-            <span class="mini-titulo">[Subtítulo]</span>
-            <h1>[Título de Contacto]</h1>
-            <p>[Texto de introducción]</p>
+            <span class="mini-titulo">Escríbenos</span>
+            <h1>Contacto</h1>
+            <p>Haz tu pedido por WhatsApp, reserva con anticipación o cuéntanos cómo te fue. Recibimos pagos en efectivo y por transferencia.</p>
         </section>
 
         <!-- Información de contacto y formulario -->
@@ -71,34 +90,38 @@
             <div class="contacto-info">
 
                 <div class="info-card">
-                    <span></span>
+                    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
                     <div>
-                        <strong>[Dirección]</strong>
-                        <p>[Texto de la dirección]</p>
+                        <strong>Dirección</strong>
+                        <p>Cl. 20 #22-33, Duitama, Boyacá</p>
                     </div>
                 </div>
 
                 <div class="info-card">
-                    <span></span>
+                    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
                     <div>
-                        <strong>[Teléfono]</strong>
-                        <p>[Texto del teléfono]</p>
+                        <strong>Teléfono</strong>
+                        <p>+57 313 263 4986 (llamadas y WhatsApp)</p>
                     </div>
                 </div>
 
                 <div class="info-card">
-                    <span></span>
+                    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
                     <div>
-                        <strong>[Horario]</strong>
-                        <p>[Texto del horario]</p>
+                        <strong>Horario</strong>
+                        <p>De 5:00 p. m. a 10:00 p. m.</p>
                     </div>
                 </div>
 
                 <div class="info-card">
-                    <span></span>
+                    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></span>
                     <div>
-                        <strong>[Redes sociales]</strong>
-                        <p>[Texto de redes]</p>
+                        <strong>Redes sociales</strong>
+                        <p>Síguenos en Instagram y Facebook</p>
+                        <div class="redes">
+                            <a href="https://www.instagram.com/jacks_pizzeria8072/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Pizzería JACK'S"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                            <a href="https://www.facebook.com/p/jacks_pizzeria8072-100032359076604/" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Pizzería JACK'S"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        </div>
                     </div>
                 </div>
 
@@ -106,11 +129,12 @@
 
             <!-- Formulario de Google Forms -->
             <div class="contacto-form contacto-embed">
-                <h2>[Título del formulario]</h2>
+                <h2>Ayudanos a mejorar</h2>
 
                 <!-- Pega aquí el iframe que te da Google Forms -->
                 <iframe
-                    src=""
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfayFFXcYBa0kZIS9DzyJvkFtSTe6ckCceMdn5ZV1LScYTxSQ/viewform?embedded=true"
+    width="100%"
                     width="100%"
                     height="700"
                     frameborder="0"
@@ -137,32 +161,34 @@
 
             <div>
                 <h3>Pizzería JACK'S</h3>
-                <p>[Descripción del cliente]</p>
+                <p>Pizzas, hamburguesas y mucho más, hechos con cariño. 18 años en familia.</p>
             </div>
 
             <div>
                 <h4>Horario de Atención</h4>
-                <p>[Horario del cliente]</p>
+                <p>De 5:00 p. m. a 10:00 p. m.</p>
             </div>
 
             <div>
                 <h4>Ubicación y Pedidos</h4>
-                <p>[Dirección del cliente]</p>
-                <p>[Teléfono del cliente]</p>
+                <p>Cl. 20 #22-33, Duitama, Boyacá</p>
+                <p>+57 313 263 4986</p>
             </div>
 
             <div>
                 <h4>Síguenos</h4>
-                <p>[Texto redes sociales]</p>
+                <p>Síguenos para conocer las novedades y los nuevos productos.</p>
 
                 <div class="redes">
-                    <a href="#"></a>
-                    <a href="#"></a>
+                    <a href="https://www.instagram.com/jacks_pizzeria8072/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Pizzería JACK'S">IG</a>
+                    <a href="https://www.facebook.com/p/jacks_pizzeria8072-100032359076604/" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Pizzería JACK'S">f</a>
                 </div>
             </div>
 
         </div>
     </footer>
+
+    <script src="js/menu-movil.js"></script>
 
 </body>
 </html>

@@ -14,8 +14,7 @@
 </head>
 
 <body>
-
-
+ 
     <header class="header">
         <div class="header-contenido">
 
@@ -31,7 +30,24 @@
                 </div>
             </div>
 
-            <nav class="navegacion" aria-label="Navegación principal">
+            <!-- Botón para abrir el menú en celulares -->
+            <button
+                class="boton-menu-movil"
+                type="button"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="menu-principal"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="navegacion"
+                id="menu-principal"
+                aria-label="Navegación principal"
+            >
                 <a href="index.html" class="activo">Inicio</a>
                 <a href="sobre-nosotros.html">Sobre Nosotros</a>
                 <a href="menu.html">Menú</a>
@@ -41,16 +57,19 @@
             <div class="acciones">
                 <a
                     class="boton-whatsapp"
-                    href="https://api.whatsapp.com/send?phone=573000000000"
+                    href="https://api.whatsapp.com/send?phone=573132634986"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Pedir por WhatsApp
+                    <span class="texto-boton-whatsapp">
+                        Pedir por WhatsApp
+                    </span>
                 </a>
             </div>
 
         </div>
     </header>
+
 
 
 
@@ -65,43 +84,15 @@
 
             <div class="hero-texto">
 
-                <div class="etiquetas">
-                    <span>[Etiqueta 1]</span>
-                    <span>[Etiqueta 2]</span>
-                    <span>[Etiqueta 3]</span>
-                </div>
-
-                <h1>[Título principal]</h1>
-
-                <p>[Texto de presentación]</p>
-
+                <h1>Sabor que nos une desde hace 18 años</h1>
                 <div class="botones">
-                    <a href="#" class="boton-menu"> Ver Menú Completo</a>
-
                     <a
-                        href="https://api.whatsapp.com/send?phone=573000000000"
+                        href="https://api.whatsapp.com/send?phone=573132634986"
                         target="_blank"
                         class="boton-pedir"
                     >
                         Pedir por WhatsApp
                     </a>
-                </div>
-
-                <div class="estadisticas">
-                    <div>
-                        <span>[Dato]</span>
-                        <p>[Texto]</p>
-                    </div>
-
-                    <div>
-                        <span>[Dato]</span>
-                        <p>[Texto]</p>
-                    </div>
-
-                    <div>
-                        <span>[Dato]</span>
-                        <p>[Texto]</p>
-                    </div>
                 </div>
 
             </div>
@@ -125,7 +116,7 @@
                         </div>
 
                         <a
-                            href="https://api.whatsapp.com/send?phone=573000000000"
+                            href="https://api.whatsapp.com/send?phone=573132634986"
                             target="_blank"
                             class="flecha"
                         >
@@ -149,7 +140,7 @@
     </section>
 
 
-    <section class="Combos" id="combos">
+    <!--<section class="Combos" id="combos">
 
         <div class="titulo-seccion">
             <div>
@@ -205,108 +196,65 @@
 
                 </div>
 
+                <div class="combo-contenido">
+                    <span>[Categoría]</span>
+                    <h3>[Nombre de la combo]</h3>
+                    <p>[Descripción de la combo]</p>
+
+                    <div class="combo-precio">
+                        <div>
+                            <strong>[Precio]</strong>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
+    </section>-->
+
+
+    <section class="menu-final" id="nosotros">
+            <div>
+                <h2>Explora sobre nosotros</h2>
+            </div>
+
+            <a href="sobre-nosotros.html">Explorar el contenido</a>
     </section>
 
 
-    <section class="esencia" id="nosotros">
-
-        <div class="esencia-contenido">
-
-            <div class="historia">
-                <span class="etiqueta">[Etiqueta]</span>
-
-                <h2>[Título de la historia]</h2>
-
-                <p>[Texto de la historia]</p>
-
-                <div class="pilares">
-
-                    <div>
-                        <span></span>
-                        <h4>[Título]</h4>
-                        <p>[Texto]</p>
-                    </div>
-
-                    <div>
-                        <span></span>
-                        <h4>[Título]</h4>
-                        <p>[Texto]</p>
-                    </div>
-
-                    <div>
-                        <span></span>
-                        <h4>[Título]</h4>
-                        <p>[Texto]</p>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="visual">
-
-                <div class="visual-imagen">
-                    <img src="assets/Fotos/Local.jpeg" alt="Imagen de la historia">
-                    <p>[Texto sobre la imagen]</p>
-                </div>
-
-                <div class="horario">
-                    <span></span>
-                    <div>
-                        <strong>[Título del horario]</strong>
-                        <p>[Horario del cliente]</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="menu-final" id="menu">
+    <section class="menu-final">
 
         <div>
-            <span>[Subtítulo]</span>
-
-            <h2>[Título del menú]</h2>
-
-            <p>[Texto del menú]</p>
+            <h2>Menu Principal</h2>
         </div>
-
-        <a href="#">Explorar el Menú Completo</a>
-
+        <a href="menu.html">Explorar el Menú Completo</a>
     </section>
 
     </main>
 
 
     <footer>
-
         <div class="footer-grid">
 
             <div>
                 <h3>Pizzería JACK'S</h3>
-                <p>[Descripción del cliente]</p>
+                <p>Pizzas, hamburguesas y mucho más, hechos con cariño. 18 años en familia.</p>
             </div>
 
             <div>
                 <h4>Horario de Atención</h4>
-                <p>[Horario del cliente]</p>
+                <p>De 5:00 p. m. a 10:00 p. m.</p>
             </div>
 
             <div>
                 <h4>Ubicación y Pedidos</h4>
-                <p>[Dirección del cliente]</p>
-                <p>[Teléfono del cliente]</p>
+                <p>Cl. 20 #22-33, Duitama, Boyacá</p>
+                <p>+57 313 263 4986</p>
             </div>
 
             <div>
                 <h4>Síguenos</h4>
-                <p>[Texto redes sociales]</p>
+                <p>Síguenos para conocer las novedades y los nuevos productos.</p>
 
                 <div class="redes">
                     <a href="#"></a>
@@ -315,10 +263,10 @@
             </div>
 
         </div>
-
     </footer>
 
     <script src="js/main.js"></script>
-    
+    <script src="js/menu-movil.js"></script>
+
 </body>
 </html>
