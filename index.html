@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-
-
+<>
+ 
     <header class="header">
         <div class="header-contenido">
 
@@ -31,7 +30,24 @@
                 </div>
             </div>
 
-            <nav class="navegacion" aria-label="Navegación principal">
+            <!-- Botón para abrir el menú en celulares -->
+            <button
+                class="boton-menu-movil"
+                type="button"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="menu-principal"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="navegacion"
+                id="menu-principal"
+                aria-label="Navegación principal"
+            >
                 <a href="index.html" class="activo">Inicio</a>
                 <a href="sobre-nosotros.html">Sobre Nosotros</a>
                 <a href="menu.html">Menú</a>
@@ -45,12 +61,15 @@
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Pedir por WhatsApp
+                    <span class="texto-boton-whatsapp">
+                        Pedir por WhatsApp
+                    </span>
                 </a>
             </div>
 
         </div>
     </header>
+
 
 
 
@@ -343,6 +362,7 @@
     </footer>
 
     <script src="js/main.js"></script>
-    
+    <script src="js/menu-movil.js"></script>
+
 </body>
 </html>
